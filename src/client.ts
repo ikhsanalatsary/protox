@@ -1,6 +1,6 @@
-import { HelloClient } from "../scripts/generated/hello_grpc_pb";
+import { HelloClient } from "../generated/hello_grpc_pb";
 import { credentials } from "grpc";
-import { HelloRequest } from "../scripts/generated/hello_pb";
+import { HelloRequest } from "../generated/hello_pb";
 
 function main() {
     const host = "localhost";

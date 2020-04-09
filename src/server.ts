@@ -1,6 +1,6 @@
 import * as grpc from "grpc";
-import { HelloRequest, HelloResponse } from "../scripts/generated/hello_pb";
-import { HelloService } from "../scripts/generated/hello_grpc_pb";
+import { HelloRequest, HelloResponse } from "../generated/hello_pb";
+import { HelloService } from "../generated/hello_grpc_pb";
 
 const host = "localhost";
 const port = ":6000";

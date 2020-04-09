@@ -19,7 +19,7 @@ if (os.platform() !== 'win32') {
   process.env.PATH += (delimiter + join(process.cwd(), 'node_modules', '.bin'));
   const ROOT = resolve(__dirname, '..');
   const PROTO_DIR = normalize(resolve(ROOT, 'pbs'));
-  const dir = __dirname + '/generated';
+  const dir = ROOT + '/generated';
   const GENERATED_DIR = normalize(resolve(escapedString(ROOT), dir));
   const PROTOC_GEN_TS_PATH = normalize(resolve(escapedString(ROOT), 'node_modules', '.bin', 'protoc-gen-ts'));
   if (!existsSync(dir)){
