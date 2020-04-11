@@ -6,7 +6,7 @@
   "scripts": {
     "generate": "node scripts/pb.js",
     "gen:certs-sh": "sh scripts/gencert.sh",
-    "gen:certs-bat": "Start-Process 'cmd.exe' 'scripts/gencert.sh'",
+    "gen:certs-bat": "node scripts/runbat.js",
     "start:server": "tsc && node lib/server.js",
     "start:client": "node lib/client.js",
     "test": "echo \"Error: no test specified\" && exit 1"

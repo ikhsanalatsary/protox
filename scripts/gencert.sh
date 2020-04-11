@@ -24,7 +24,7 @@ echo Generate client key
 openssl genrsa -passout pass:1111 -des3 -out client.key 4096
 
 echo Generate client signing request:
-openssl req -passin pass:1111 -new -key client.key -out client.csr -subj  "/C=ID/ST=Jakarta/L=Jakarta/O=YourCompany/OU=YourApp/CN=MacBook-Pro"
+openssl req -passin pass:1111 -new -key client.key -out client.csr -subj  "/C=ID/ST=Jakarta/L=Jakarta/O=YourCompany/OU=YourApp/CN=Client-MacBook-Pro"
 
 echo Self-sign client certificate:
 openssl x509 -passin pass:1111 -req -days 365 -in client.csr -CA ca.crt -CAkey ca.key -set_serial 01 -out client.crt
