@@ -4,7 +4,7 @@ import { HelloService } from "../generated/hello_grpc_pb";
 import { readFileSync } from 'fs';
 
 const host = "0.0.0.0";
-const port = ":6000";
+const port = ":50051";
 const server = new grpc.Server();
 const cacert = readFileSync('certs/ca.crt'),
     cert = readFileSync('certs/server.crt'),
