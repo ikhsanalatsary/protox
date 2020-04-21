@@ -24,7 +24,25 @@ Sample Grpc implementation in Node.JS with TypeScript and SSL Secure connection
     npm run start:client
    ```
 
-## MISC
+## Using Docker
+### Build Docker
+```
+  docker build -t="protox:1.0.0" .
+```
+### Create container
+```
+  docker run -d -p 50051:50051 --name protox protox:1.0.0
+```
+### Start
+```
+   docker start protox
+```
+### Stop
+```
+  docker stop protox
+```
+
+## IMPORTANT
 ### Generate protoc to JavaScript & type definition (.d.ts)
 ```
   npm run generate
