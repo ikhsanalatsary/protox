@@ -25,7 +25,7 @@ Sample Grpc implementation in Node.JS with TypeScript and SSL Secure connection
    ```
 
 ## Using Docker
-### Build Docker
+### Build Docker image
 ```
   docker build -t="protox:1.0.0" .
 ```

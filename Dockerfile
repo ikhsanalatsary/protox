@@ -2,9 +2,9 @@ FROM node:12-alpine3.11
 
 WORKDIR /var/www
 
-ADD . /var/www
+COPY . /var/www
 
-RUN npm install && npm install request && npm rebuild
+RUN npm install
 
 EXPOSE 50051
 
